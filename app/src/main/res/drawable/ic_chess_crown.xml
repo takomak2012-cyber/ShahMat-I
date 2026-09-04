@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Chess crown / queen symbol -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8,24 L18,16 L24,26 L32,12 L40,26 L46,16 L56,24 L54,52 L10,52 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M29,58 L35,58 L35,52 L29,52 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,30 C21,34 27,34 30,30 C27,26 21,26 18,30 Z" />
+</vector>

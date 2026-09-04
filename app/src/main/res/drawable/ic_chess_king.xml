@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Chess king silhouette with cross -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M29,6 L35,6 L35,12 L41,12 L41,18 L35,18 L35,24 L29,24 L29,18 L23,18 L23,12 L29,12 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M24,28 C28,30 30,33 30,37 C30,36.2 29.8,35.4 29.4,34.8 C30.5,35.5 31.3,36.7 31.4,38 L31,42 L33,42 C30.5,42 28.9,43.5 28.9,44 L23,44 C23,37 29,35 24,28 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,46 L44,46 L44,52 L38,52 L42,56 L52,56 L52,58 L12,58 L12,56 L22,56 L26,52 L20,52 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,50 C18,54 46,54 50,50 L50,56 L14,56 Z" />
+</vector>

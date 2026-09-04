@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShahMat&amp;I</string>
+    <string name="author">Вячеслав Доляр</string>
+    <string name="splash_title">ShahMat&amp;I</string>
+    <string name="splash_author">Автор: Вячеслав Доляр</string>
+    <string name="choose_color">Выберите цвет фигур</string>
+    <string name="white_pieces">Белые</string>
+    <string name="black_pieces">Чёрные</string>
+    <string name="choose_difficulty">Выберите сложность</string>
+    <string name="difficulty_title">Выбери сложность игры</string>
+    <string name="difficulty_subtitle">Выберите уровень игры, чтобы начать партию</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="difficulty_learn_title">Новичок</string>
+    <string name="difficulty_learn_description">Для обучения и первых партий</string>
+    <string name="difficulty_beginner_title">Лёгкий</string>
+    <string name="difficulty_beginner_description">Для уверенной игры</string>
+    <string name="difficulty_intermediate_title">Средний</string>
+    <string name="difficulty_intermediate_description">Настоящий вызов</string>
+    <string name="difficulty_master_title">Мастер</string>
+    <string name="difficulty_master_description">Для опытных игроков</string>
+    <string name="difficulty_label">Сложность: %1$s</string>
+    <string name="difficulty_learn">Учимся</string>
+    <string name="difficulty_beginner">Немного умею</string>
+    <string name="difficulty_intermediate">Хорошо играю</string>
+    <string name="difficulty_master">Я гроссмейстер</string>
+    <string name="btn_surrender">Сдаться</string>
+    <string name="btn_hint">Подсказка</string>
+    <string name="btn_ask">Правила</string>
+    <string name="learn_title">Выбери фигуру и я расскажу про неё</string>
+    <string name="learn_ask">Спросить</string>
+    <string name="learn_return">Вернуться в игру</string>
+    <string name="learn_figure">Фигура</string>
+    <string name="learn_select_prompt">Нажми на фигуру на доске</string>
+    <string name="learn_how_moves">Как ходит</string>
+
+    <string name="learn_pawn_name">Пешка</string>
+    <string name="learn_pawn_desc">Самая маленькая, но очень важная фигура. Пешек много, они защищают фигуры и образуют «щит» перед королём.</string>
+    <string name="learn_pawn_move">Ходит на 1 клетку вперёд. С исходной позиции может пойти сразу на 2 клетки. Бьёт фигуры по диагонали на 1 клетку вперёд.</string>
+
+    <string name="learn_knight_name">Конь</string>
+    <string name="learn_knight_desc">Хитрая фигура в форме буквы Г. Умеет «перепрыгивать» через любые другие фигуры — единственная, кто так умеет.</string>
+    <string name="learn_knight_move">Ходит буквой Г (L): на 2 клетки в одном направлении и 1 клетку в перпендикулярном. Бьёт фигуру, которая стоит на клетке приземления.</string>
+
+    <string name="learn_bishop_name">Слон</string>
+    <string name="learn_bishop_desc">Дальнобойная фигура. Каждый слон всю игру ходит только по клеткам своего цвета.</string>
+    <string name="learn_bishop_move">Ходит по диагоналям на любое число клеток, но не может перепрыгивать через фигуры.</string>
+
+    <string name="learn_rook_name">Ладья</string>
+    <string name="learn_rook_desc">Сильная дальнобойная фигура. Особенно опасна на открытых линиях и на 7-й (2-й) горизонтали.</string>
+    <string name="learn_rook_move">Ходит по вертикали и горизонтали на любое число клеток, но не может перепрыгивать через фигуры.</string>
+
+    <string name="learn_queen_name">Ферзь</string>
+    <string name="learn_queen_desc">Самая сильная фигура на доске. Совмещает силу ладьи и слона, поэтому стоит как несколько фигур.</string>
+    <string name="learn_queen_move">Ходит, как ладья и слон вместе: по вертикали, горизонтали и диагоналям на любое число клеток. Не перепрыгивает фигуры.</string>
+
+    <string name="learn_king_name">Король</string>
+    <string name="learn_king_desc">Самая главная фигура. Его нельзя оставлять под шахом. Если королю некуда уйти — это мат и конец игры.</string>
+    <string name="learn_king_move">Ходит на 1 клетку в любом направлении (по вертикали, горизонтали или диагонали).</string>
+    <string name="btn_minimize">Свернуть</string>
+    <string name="btn_donate">Дать на кофе автору</string>
+    <string name="victory_title">Победа!</string>
+    <string name="play_harder">Играть сложнее</string>
+    <string name="btn_exit">Выход</string>
+    <string name="your_turn">Ваш ход</string>
+    <string name="ai_thinking">Думаю</string>
+    <string name="check">Шах!</string>
+    <string name="check_warn">Вам шах!</string>
+    <string name="checkmate">Мат</string>
+    <string name="result_victory">Победа</string>
+    <string name="result_checkmate">Вам мат</string>
+    <string name="result_white_won">Белые победили</string>
+    <string name="result_black_won">Чёрные победили</string>
+    <string name="stalemate">Пат</string>
+    <string name="draw">Ничья</string>
+    <string name="surrender_title">Сдаться?</string>
+    <string name="surrender_message">Вы уверены, что хотите сдаться?</string>
+    <string name="surrender_yes">Да, сдаюсь</string>
+    <string name="surrender_no">Нет</string>
+    <string name="game_over">Игра окончена</string>
+    <string name="hint_shown">Подсказка показана</string>
+    <string name="game_end_victory">Поздравляю с победой!</string>
+    <string name="game_end_defeat">Вы проиграли. Попробуем ещё раз?</string>
+    <string name="app_version">Версия %1$s</string>
+
+    <string name="difficulty_header_choose">Выбери</string>
+    <string name="difficulty_header_level">сложность игры</string>
+    <string name="difficulty_learn_title_new">НОВИЧОК</string>
+    <string name="difficulty_learn_desc_new">Для новичков. Учись и получай удовольствие!</string>
+    <string name="difficulty_beginner_title_new">ЛЁГКИЙ</string>
+    <string name="difficulty_beginner_desc_new">Лёгкий уровень. Для уверенной игры.</string>
+    <string name="difficulty_intermediate_title_new">СРЕДНИЙ</string>
+    <string name="difficulty_intermediate_desc_new">Средний уровень. Настоящий вызов!</string>
+    <string name="difficulty_master_title_new">МАСТЕР</string>
+    <string name="difficulty_master_desc_new">Сложный уровень. Только для мастеров!</string>
+    <string name="difficulty_two_player_title">С ЧЕЛОВЕКОМ</string>
+    <string name="difficulty_two_player_desc">Игра для двоих на одном устройстве. Ходишь по очереди.</string>
+    <string name="difficulty_two_player">С человеком</string>
+    <string name="hint_exhausted">Подсказки закончились (3/3 использованы)</string>
+    <string name="difficulty_banner_title">Выбери свой уровень и покажи на что ты способен!</string>
+    <string name="difficulty_back">НАЗАД</string>
+    <string name="play_again">Играем ещё?</string>
+
+    <!-- Design patch strings -->
+    <string name="choose_color_title">Выбери цвет фигур</string>
+    <string name="chess_board_preview">Предпросмотр шахматной доски</string>
+    <string name="white_pieces_title_new">БЕЛЫЕ</string>
+    <string name="white_pieces_desc_new">Светлая сторона. Начни свою партию.</string>
+    <string name="black_pieces_title_new">ЧЁРНЫЕ</string>
+    <string name="black_pieces_desc_new">Тёмная сторона. Испытай себя.</string>
+</resources>

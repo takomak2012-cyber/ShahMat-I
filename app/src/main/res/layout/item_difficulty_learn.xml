@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnDifficultyLearn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="104dp"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_level_gradient_learn"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/ic_chess_pawn"
+        android:tint="#3AFFFFFF"
+        android:alpha="0.22"
+        android:contentDescription="@string/difficulty_learn_title_new" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_card_icon">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chess_crown"
+                android:tint="#FFFFFF"
+                android:contentDescription="@string/difficulty_learn_title_new" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty_learn_title_new"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:textColor="#FFFFFF"
+                android:maxLines="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty_learn_desc_new"
+                android:textSize="13sp"
+                android:textColor="#F2FFFFFF"
+                android:layout_marginTop="3dp"
+                android:maxLines="2" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_chevron_right"
+            android:tint="#FFFFFF"
+            android:contentDescription="@string/next" />
+    </LinearLayout>
+</FrameLayout>

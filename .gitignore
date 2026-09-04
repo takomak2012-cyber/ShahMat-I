@@ -1,0 +1,17 @@
+# Signing secrets & keystore - never commit
+shahmat-signing.properties
+*.keystore
+*.keystore.bak
+*.p12
+*.pfx
+
+# Build output
+app/build/
+build/
+.gradle/
+
+# IDE / OS
+.idea/
+*.iml
+Thumbs.db
+.DS_Store

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottom_chess_fade" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/ic_chess_crown"
+            android:tint="@color/gold_accent"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <View
+                android:layout_width="54dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_header_line" />
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:src="@drawable/ic_gold_diamond"
+                android:contentDescription="@string/app_name" />
+            <View
+                android:layout_width="54dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_header_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSplashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/splash_title"
+            android:textColor="#2E1F12"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:letterSpacing="0.04"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvSplashAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/splash_author"
+            android:textColor="#5B4934"
+            android:textSize="16sp"
+            android:gravity="center" />
+    </LinearLayout>
+</FrameLayout>

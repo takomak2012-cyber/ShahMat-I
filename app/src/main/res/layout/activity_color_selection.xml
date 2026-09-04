@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/colorSelectRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color_selection_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottom_chess_fade" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="100dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_chess_crown"
+                android:tint="@color/gold_accent"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvColorSelectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/choose_color_title"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#2E1F12"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_header_line" />
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_gold_diamond"
+                    android:contentDescription="@string/choose_color_title" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_header_line" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="6dp"
+                app:strokeColor="@color/gold_accent"
+                app:strokeWidth="1dp">
+
+                <ImageView
+                    android:id="@+id/boardPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:padding="14dp"
+                    android:src="@drawable/board_preview"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/chess_board_preview" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnColorRules"
+                style="@style/RoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_ask"
+                android:paddingHorizontal="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/btn_secondary"
+                android:textColor="@color/btn_text" />
+
+            <FrameLayout
+                android:id="@+id/btnWhitePieces"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_color_white_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_card_icon_light">
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_chess_pawn"
+                            android:tint="#FFFFFF"
+                            android:contentDescription="@string/white_pieces" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/white_pieces_title_new"
+                            android:textColor="#2E1F12"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:maxLines="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/white_pieces_desc_new"
+                            android:textColor="#6B5845"
+                            android:textSize="13sp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="2" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:tint="#7E6A52"
+                        android:contentDescription="@string/next" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btnBlackPieces"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_color_black_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_card_icon_dark">
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_chess_knight"
+                            android:tint="#FFF3D0"
+                            android:contentDescription="@string/black_pieces" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/black_pieces_title_new"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:maxLines="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/black_pieces_desc_new"
+                            android:textColor="#E8DDD0"
+                            android:textSize="13sp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="2" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:tint="#FFF3D0"
+                        android:contentDescription="@string/next" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvColorVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="14dp"
+        android:textColor="#4A3B28"
+        android:textSize="11sp"
+        android:alpha="0.82" />
+</FrameLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_dark">
+
+    <!-- Fireworks (victory) -->
+    <com.shahmat.game.ui.gameend.FireworksView
+        android:id="@+id/fireworksView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Sad face (defeat) -->
+    <TextView
+        android:id="@+id/tvSadFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="😢"
+        android:textSize="160sp"
+        android:visibility="gone" />
+
+    <!-- Full-screen result banner shown for 3s before the animation runs. -->
+    <TextView
+        android:id="@+id/tvResultBanner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/result_victory"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:visibility="gone" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvEndMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:text="@string/game_end_victory"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowRadius="6"
+        android:shadowDx="2"
+        android:shadowDy="2" />
+
+    <!-- Play again button -->
+    <Button
+        android:id="@+id/btnPlayAgain"
+        style="@style/RoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/play_again"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeStepGranularity="1sp"
+        android:backgroundTint="@color/btn_primary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+</FrameLayout>
